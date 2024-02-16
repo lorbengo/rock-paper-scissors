@@ -34,7 +34,7 @@ function playGame(event) {
 }
 
 function moveFocus(event) {
-  if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+  if (event.key === "ArrowRight" || event.key === "ArrowUp") {
     if (event.target.id === "rock") {
       paper.focus();
     } else if (event.target.id === "paper") {
@@ -42,7 +42,7 @@ function moveFocus(event) {
     } else if (event.target.id === "scissors") {
       rock.focus();
     }
-  } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+  } else if (event.key === "ArrowLeft" || event.key === "ArrowDown") {
     if (event.target.id === "scissors") {
       paper.focus();
     } else if (event.target.id === "paper") {
