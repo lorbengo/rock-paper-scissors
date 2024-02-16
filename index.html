@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Rock Paper Scissors</h1>
+
+    <p id="score">
+      🕺 Player - <span id="player-score"></span> :
+      <span id="computer-score"></span> - Computer 🤖
+    </p>
+
+    <p id="display" class="hidden"></p>
+
+    <div class="new-game"><button>Play Again</button></div>
+
+    <div id="player-selection">
+      <button id="rock">✊ Rock</button>
+      <button id="paper">🤚 Paper</button>
+      <button id="scissors">✌️ Scissors</button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
